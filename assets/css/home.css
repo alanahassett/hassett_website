@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
 h2 {
   color: black;
-  font: georgia;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-weight: 100;
+  font-size: 35px;
+
 }
 
 .site-content {
@@ -41,6 +56,8 @@ main {
 .title {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .nav {
@@ -62,7 +79,7 @@ nav > ul > li {
   padding: 10px;
 }
 
-.edu {
+section#education {
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr;
