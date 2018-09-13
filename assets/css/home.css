@@ -18,19 +18,37 @@ h2 {
 
 }
 
-.site-content {
+/* .site-content {
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+} */
+
+/* I tried to just establish the layout in the id declarations, but it didn't work? */
+
+section.entry-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr, 1fr;
+  grid-gap: 30px;
 }
 
-.entry.content {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 2fr, 1fr;
+section#child-1 {
+  grid-column: 1 /2;
+  grid-row: 1 / 2;
 }
 
-#para1 {
+section#child-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+section#child-3 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+/* #para1 {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
@@ -38,13 +56,14 @@ h2 {
 #para2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-}
+} */
 
 body {
   width: 70vw;
   padding: 2em;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(chevron.jpg);
 }
 
 main {
@@ -52,6 +71,13 @@ main {
   margin: 2em;
   background-color: rgba(62, 185, 187, .27);
 }
+
+/* Media styles */
+
+img.grid-img {
+  width: 100%;
+}
+
 
 .title {
   margin-left: auto;
