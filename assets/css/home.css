@@ -6,7 +6,23 @@ h2 {
 .site-content {
   display: grid;
   grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 2fr, 1fr;
+}
+
+.entry.content {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 2fr, 1fr;
+}
+
+#para1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+#para2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 body {
@@ -19,7 +35,7 @@ body {
 main {
   padding: 3em;
   margin: 2em;
-  background-color: lightblue;
+  background-color: rgba(62, 185, 187, .27);
 }
 
 .title {
@@ -33,7 +49,7 @@ main {
   letter-spacing: 1px;
   list-style-type: none;
   display: flex;
-  text-align: center;
+  padding-left: 19vw;
 }
 
 a:hover {
