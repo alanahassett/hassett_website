@@ -45,11 +45,13 @@ h2 {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding-left: 23vw;
+  justify-content: center;
+  /* I can't get the nav bar to center using flexbox*/
   padding-top: 0px;
   background-color: rgba(65, 189, 189, 1);
   /* padding-left: 19vw; */
 }
+
 
 nav > ul > li {
   list-style-type: none;
@@ -96,6 +98,7 @@ section#child-2 {
 
 img.grid-img {
   width: 100%;
+  border: 10px solid rgba(65, 189, 189, 1);
 }
 
 /*resume page */
