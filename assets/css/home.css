@@ -35,7 +35,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .nav {
@@ -46,6 +46,8 @@ h2 {
   display: flex;
   margin: 0;
   padding-left: 23vw;
+  padding-top: 0px;
+  background-color: rgba(65, 189, 189, 1);
   /* padding-left: 19vw; */
 }
 
